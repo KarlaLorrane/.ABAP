@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Grupo de funções Treinamento</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZGRP01TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZGRP01</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_F0001</FUNCNAME>
+     <SHORT_TEXT>Calculadora</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>NUMERO1</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>I</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>NUMERO2</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>I</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>OPERACAO</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>C</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>RESULTADO</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>I</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>INV_OPERADOR</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>DIVI_ZERO</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>NUMERO1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Número 1</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NUMERO2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Número 2</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OPERACAO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Operação</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RESULTADO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Resultado</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>INV_OPERADOR</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>OPERADOR INVÁLIDO</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DIVI_ZERO</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>DIVISÃO POR ZERO</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
